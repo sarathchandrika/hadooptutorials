@@ -1,0 +1,4 @@
+bin/hadoop jar Locationofhadoopstreamingjar -file Locationofmapperfile -mapper mapperfilelocation \ -file  Locationofreducerfile  -reducer reducerfilelocation \ -input inputfilelocation -output outputfilelocation
+
+bin/hadoop dfs -cat outputfilelocation/part-00000
+
