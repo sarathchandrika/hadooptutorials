@@ -1,0 +1,11 @@
+Move input file to hadoop user
+hadoop fs -put inputfilepathinlocalfilesystem inputfilepathinhdfs
+
+Compile jar file
+jar Exported-jar-file-name Packagename.classname inputfilepath outputfilepath
+
+Output file 
+hadoop fs -ls outputfile
+
+Read contents of output file
+hadoop fs -cat outputfile/part-r-00000
